@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,13 +7,15 @@
 <title>Rickshaw Rambles</title>
 
 <style>
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-html, body {
+html,
+body {
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -31,7 +34,10 @@ body {
     color: white;
 }
 
-/* MAIN PAGE */
+
+/* ================================
+   LANDING PAGE
+================================ */
 
 .page {
     width: 100%;
@@ -44,11 +50,7 @@ body {
 
     text-align: center;
     padding: 30px;
-
-    position: relative;
 }
-
-/* LANDING CONTENT */
 
 .content {
     max-width: 700px;
@@ -60,19 +62,24 @@ body {
 .logo {
     width: 150px;
     height: 150px;
+
     object-fit: contain;
 
     margin-bottom: 25px;
 
-    filter: drop-shadow(0 8px 25px rgba(0,0,0,0.45));
+    filter: drop-shadow(
+        0 8px 25px rgba(0,0,0,0.45)
+    );
 }
 
 .small-title {
     font-family: Arial, sans-serif;
+
     text-transform: uppercase;
     letter-spacing: 5px;
 
     font-size: 12px;
+
     opacity: 0.8;
 
     margin-bottom: 18px;
@@ -80,17 +87,22 @@ body {
 
 h1 {
     font-size: clamp(42px, 7vw, 76px);
+
     line-height: 0.95;
+
     font-weight: 400;
+
     letter-spacing: -2px;
 
-    text-shadow: 0 5px 25px rgba(0,0,0,0.45);
+    text-shadow:
+        0 5px 25px rgba(0,0,0,0.45);
 }
 
 .subtitle {
     font-family: Arial, sans-serif;
 
     font-size: clamp(15px, 2vw, 19px);
+
     line-height: 1.6;
 
     max-width: 570px;
@@ -100,10 +112,14 @@ h1 {
     color: rgba(255,255,255,0.88);
 }
 
-/* BOOK BUTTON */
+
+/* ================================
+   BOOK BUTTON
+================================ */
 
 .book-button {
     display: inline-flex;
+
     align-items: center;
     justify-content: center;
 
@@ -112,19 +128,25 @@ h1 {
     padding: 17px 32px;
 
     background: white;
+
     color: #10151b;
+
+    border: none;
 
     border-radius: 50px;
 
-    text-decoration: none;
-
     font-family: Arial, sans-serif;
+
     font-size: 14px;
+
     font-weight: bold;
+
     letter-spacing: 1.5px;
+
     text-transform: uppercase;
 
-    box-shadow: 0 12px 35px rgba(0,0,0,0.35);
+    box-shadow:
+        0 12px 35px rgba(0,0,0,0.35);
 
     cursor: pointer;
 
@@ -147,140 +169,188 @@ h1 {
     transform: translateY(-1px);
 }
 
-/* BOOKING SCREEN */
+
+/* ================================
+   BOOKING SCREEN
+================================ */
 
 .booking-screen {
+
     position: fixed;
 
     inset: 0;
 
     width: 100%;
-    height: 100%;
-
-    background:
-        linear-gradient(
-            rgba(8, 12, 18, 0.88),
-            rgba(8, 12, 18, 0.94)
-        ),
-        url("https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=2000&q=90")
-        center center / cover no-repeat;
+    height: 100vh;
 
     display: none;
 
     flex-direction: column;
 
     z-index: 1000;
+
+    background:
+        linear-gradient(
+            rgba(8,12,18,0.82),
+            rgba(8,12,18,0.90)
+        ),
+        url("https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=2000&q=90")
+        center center / cover no-repeat;
 }
 
-/* TOP BAR */
 
-.booking-top {
-    height: 70px;
+/* ================================
+   BOOKING HEADER
+================================ */
+
+.booking-header {
+
+    height: 72px;
 
     flex-shrink: 0;
 
     display: flex;
+
     align-items: center;
+
     justify-content: space-between;
 
     padding: 0 25px;
 
-    background: rgba(8,12,18,0.8);
+    background:
+        rgba(8,12,18,0.75);
 
-    border-bottom: 1px solid rgba(255,255,255,0.12);
+    border-bottom:
+        1px solid rgba(255,255,255,0.12);
 
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter:
+        blur(15px);
+
+    -webkit-backdrop-filter:
+        blur(15px);
 }
 
 .booking-brand {
-    display: flex;
-    align-items: center;
-    gap: 10px;
 
-    font-family: Georgia, "Times New Roman", serif;
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+
     font-size: 18px;
 }
 
 .booking-brand img {
-    width: 42px;
-    height: 42px;
+
+    width: 43px;
+    height: 43px;
+
     object-fit: contain;
 }
 
-/* CANCEL */
+
+/* ================================
+   CANCEL BUTTON
+================================ */
 
 .cancel-button {
-    border: 1px solid rgba(255,255,255,0.25);
 
-    background: rgba(255,255,255,0.08);
+    display: inline-flex;
 
-    color: white;
+    align-items: center;
+
+    gap: 7px;
 
     padding: 10px 18px;
 
     border-radius: 30px;
 
+    border:
+        1px solid rgba(255,255,255,0.25);
+
+    background:
+        rgba(255,255,255,0.08);
+
+    color: white;
+
     font-family: Arial, sans-serif;
+
     font-size: 13px;
+
     font-weight: 600;
 
     cursor: pointer;
 
-    transition: all 0.25s ease;
+    transition:
+        all 0.25s ease;
 }
 
 .cancel-button:hover {
-    background: rgba(255,255,255,0.18);
 
-    border-color: rgba(255,255,255,0.45);
+    background:
+        rgba(255,255,255,0.18);
 
-    transform: translateY(-1px);
+    border-color:
+        rgba(255,255,255,0.45);
+
+    transform:
+        translateY(-1px);
 }
 
-/* BOOKING AREA */
+
+/* ================================
+   BOOKING CONTENT
+================================ */
 
 .booking-area {
+
     flex: 1;
 
     overflow-y: auto;
 
-    padding: 25px;
+    padding: 24px;
 }
 
-/*
-   White container around the GetItBooked widget
-*/
+.booking-card {
 
-.booking-container {
     width: 100%;
-    max-width: 1100px;
 
-    min-height: 100%;
+    max-width: 1100px;
 
     margin: 0 auto;
 
     background: white;
 
+    color: #111827;
+
     border-radius: 22px;
 
-    padding: 15px;
+    padding: 18px;
 
     box-shadow:
         0 25px 80px rgba(0,0,0,0.45);
 
-    color: #111;
+    min-height: 500px;
 }
 
-/* GETITBOOKED */
 
-#getitbooked-widget {
+/* THE IMPORTANT PART */
+
+#booking-widget {
+
     width: 100%;
+
+    min-height: 500px;
 }
 
-/* ANIMATIONS */
+
+/* ================================
+   ANIMATION
+================================ */
 
 @keyframes fadeUp {
+
     from {
         opacity: 0;
         transform: translateY(25px);
@@ -290,21 +360,13 @@ h1 {
         opacity: 1;
         transform: translateY(0);
     }
+
 }
 
-@keyframes bookingIn {
-    from {
-        opacity: 0;
-        transform: scale(0.98);
-    }
 
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-
-/* MOBILE */
+/* ================================
+   MOBILE
+================================ */
 
 @media (max-width: 600px) {
 
@@ -315,6 +377,7 @@ h1 {
     .logo {
         width: 105px;
         height: 105px;
+
         margin-bottom: 22px;
     }
 
@@ -323,50 +386,69 @@ h1 {
     }
 
     .subtitle {
-        margin: 20px auto 28px;
+        margin:
+            20px auto 28px;
     }
 
     .book-button {
+
         width: 100%;
+
         max-width: 280px;
     }
 
-    .booking-top {
-        height: 64px;
-        padding: 0 15px;
+    .booking-header {
+
+        height: 65px;
+
+        padding:
+            0 15px;
     }
 
     .booking-brand {
+
         font-size: 15px;
     }
 
     .booking-brand img {
+
         width: 36px;
         height: 36px;
     }
 
     .cancel-button {
-        padding: 9px 14px;
+
+        padding:
+            9px 14px;
+
         font-size: 12px;
     }
 
     .booking-area {
+
         padding: 10px;
     }
 
-    .booking-container {
-        padding: 5px;
-        border-radius: 16px;
+    .booking-card {
+
+        padding: 7px;
+
+        border-radius:
+            16px;
     }
+
 }
+
 </style>
 </head>
 
+
 <body>
 
-<!-- ========================= -->
-<!-- LANDING PAGE -->
-<!-- ========================= -->
+
+<!-- =====================================
+     ORIGINAL LANDING PAGE
+===================================== -->
 
 <div class="page" id="landingPage">
 
@@ -403,13 +485,20 @@ h1 {
 </div>
 
 
-<!-- ========================= -->
-<!-- BOOKING SCREEN -->
-<!-- ========================= -->
 
-<div class="booking-screen" id="bookingScreen">
+<!-- =====================================
+     BOOKING SCREEN
+===================================== -->
 
-    <div class="booking-top">
+<div
+    class="booking-screen"
+    id="bookingScreen"
+>
+
+
+    <!-- HEADER -->
+
+    <header class="booking-header">
 
         <div class="booking-brand">
 
@@ -418,42 +507,62 @@ h1 {
                 alt="Rickshaw Rambles"
             >
 
-            <span>Rickshaw Rambles</span>
+            <span>
+                Rickshaw Rambles
+            </span>
 
         </div>
+
 
         <button
             class="cancel-button"
             onclick="closeBooking()"
         >
+
             ← Cancel
+
         </button>
 
-    </div>
+    </header>
 
 
-    <div class="booking-area">
 
-        <div class="booking-container">
+    <!-- BOOKING AREA -->
 
-            <div id="getitbooked-widget"></div>
+    <main class="booking-area">
+
+        <div class="booking-card">
+
+            <!--
+                GETITBOOKED MOUNTS HERE
+            -->
+
+            <div id="booking-widget"></div>
 
         </div>
 
-    </div>
+    </main>
+
 
 </div>
 
 
-<!-- ========================= -->
-<!-- GETITBOOKED -->
-<!-- ========================= -->
+
+<!-- =====================================
+     GETITBOOKED WIDGET
+===================================== -->
 
 <script
     src="https://getitbooked.app/widget.js"
-    data-token="f924f9b0ffc6177e3fac8d99298480da82d964638251f1d7f418a0c4ae7d14af">
+    data-token="f924f9b0ffc6177e3fac8d99298480da82d964638251f1d7f418a0c4ae7d14af"
+    data-target="booking-widget">
 </script>
 
+
+
+<!-- =====================================
+     PAGE CONTROLS
+===================================== -->
 
 <script>
 
@@ -461,11 +570,8 @@ function openBooking() {
 
     document.getElementById("landingPage").style.display = "none";
 
-    const booking = document.getElementById("bookingScreen");
+    document.getElementById("bookingScreen").style.display = "flex";
 
-    booking.style.display = "flex";
-
-    booking.style.animation = "bookingIn 0.35s ease forwards";
 }
 
 
@@ -474,9 +580,12 @@ function closeBooking() {
     document.getElementById("bookingScreen").style.display = "none";
 
     document.getElementById("landingPage").style.display = "flex";
+
 }
 
 </script>
 
+
 </body>
 </html>
+```
