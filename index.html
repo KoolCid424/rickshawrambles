@@ -536,6 +536,55 @@ section {
     transform: translateY(-2px);
 }
 
+.contact-form button:disabled {
+    opacity: .7;
+    cursor: wait;
+    transform: none;
+}
+
+/* CONTACT SUCCESS */
+
+.contact-success {
+    padding: 55px 35px;
+    text-align: center;
+    border: 1px solid rgba(185,154,91,.3);
+    background: rgba(255,255,255,.045);
+}
+
+.contact-success .success-icon {
+    width: 58px;
+    height: 58px;
+    margin: 0 auto 24px;
+    border: 1px solid var(--gold);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--gold);
+    font-size: 25px;
+}
+
+.contact-success h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 42px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.contact-success p {
+    color: rgba(255,255,255,.67);
+    line-height: 1.8;
+    max-width: 430px;
+    margin: auto;
+}
+
+.contact-error {
+    color: #e6b0a5;
+    font-size: 13px;
+    line-height: 1.5;
+    margin-top: 12px;
+}
+
 /* FOOTER */
 
 footer {
@@ -633,6 +682,10 @@ footer p {
         gap: 45px;
     }
 
+    .contact-success {
+        padding: 45px 20px;
+    }
+
     .footer-inner {
         flex-direction: column;
         align-items: flex-start;
@@ -645,7 +698,6 @@ footer p {
 <body>
 
 <header class="site-header" id="header">
-
 
 <a href="#home" aria-label="Jacob's Vintage Bicycles home">
     <img
@@ -666,512 +718,504 @@ footer p {
 
 <div class="mobile-menu">☰</div>
 
-
 </header>
 
 <main>
 
 <section class="hero" id="home">
 
-
 <div class="hero-content">
 
-    <div class="eyebrow">
-        Vintage Cycling Experiences
-    </div>
 
-    <h1>
-        Jacob's
-        <span>Vintage Bicycles</span>
-    </h1>
-
-    <p>
-        Ride a little piece of cycling history.
-        Discover a remarkable collection of unusual and historic bicycles,
-        and experience cycling like you've never experienced it before.
-    </p>
-
-    <a href="#booking" class="hero-button">
-        Book an Experience
-    </a>
-
-    <div class="scroll-hint">
-        ↓ Explore the collection
-    </div>
-
+<div class="eyebrow">
+    Vintage Cycling Experiences
 </div>
 
+<h1>
+    Jacob's
+    <span>Vintage Bicycles</span>
+</h1>
+
+<p>
+    Ride a little piece of cycling history.
+    Discover a remarkable collection of unusual and historic bicycles,
+    and experience cycling like you've never experienced it before.
+</p>
+
+<a href="#booking" class="hero-button">
+    Book an Experience
+</a>
+
+<div class="scroll-hint">
+    ↓ Explore the collection
+</div>
+
+
+</div>
 
 </section>
 
 <section class="section intro" id="about">
 
-
 <div class="section-inner intro-grid">
 
-    <div class="intro-image"></div>
 
-    <div class="intro-copy">
+<div class="intro-image"></div>
 
-        <div class="eyebrow">
-            More than a bicycle
-        </div>
+<div class="intro-copy">
 
-        <h2>
-            Cycling history,
-            <em>you can ride.</em>
-        </h2>
-
-        <div class="gold-line"></div>
-
-        <p>
-            Forget the ordinary afternoon bike ride. Jacob's Vintage
-            Bicycles brings together an eccentric collection of machines
-            from different eras of cycling history.
-        </p>
-
-        <p>
-            From enormous penny farthings and classic tandems to
-            unmistakable British icons, every bicycle has a story to tell.
-            And, where suitable, you don't just look at it.
-            You ride it.
-        </p>
-
+    <div class="eyebrow">
+        More than a bicycle
     </div>
+
+    <h2>
+        Cycling history,
+        <em>you can ride.</em>
+    </h2>
+
+    <div class="gold-line"></div>
+
+    <p>
+        Forget the ordinary afternoon bike ride. Jacob's Vintage
+        Bicycles brings together an eccentric collection of machines
+        from different eras of cycling history.
+    </p>
+
+    <p>
+        From enormous penny farthings and classic tandems to
+        unmistakable British icons, every bicycle has a story to tell.
+        And, where suitable, you don't just look at it.
+        You ride it.
+    </p>
 
 </div>
 
+
+</div>
 
 </section>
 
 <section class="section collection" id="collection">
 
-
 <div class="section-inner">
 
-    <div class="section-heading">
 
-        <div class="eyebrow">
-            The Collection
-        </div>
+<div class="section-heading">
 
-        <h2>
-            A rather unusual
-            collection of bicycles.
-        </h2>
-
-        <p>
-            Nine bicycles. Several decades of cycling history.
-            And absolutely no shortage of things to talk about.
-        </p>
-
+    <div class="eyebrow">
+        The Collection
     </div>
 
+    <h2>
+        A rather unusual
+        collection of bicycles.
+    </h2>
 
-    <div class="bike-grid">
-
-        <article class="bike-card">
-            <div class="bike-image"
-            style="background-image:url('https://images.unsplash.com/photo-1502744688674-c619d1586c9e?auto=format&fit=crop&w=1000&q=85')">
-            </div>
-            <div class="bike-info">
-                <div class="bike-number">01</div>
-                <h3>Penny Farthing</h3>
-                <p>
-                    The unmistakable Victorian high-wheel bicycle.
-                    A spectacular piece of cycling history and one of
-                    the ultimate centrepieces of the collection.
-                </p>
-            </div>
-        </article>
-
-
-        <article class="bike-card">
-            <div class="bike-image"
-            style="background-image:url('https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=1000&q=85')">
-            </div>
-            <div class="bike-info">
-                <div class="bike-number">02</div>
-                <h3>Bone Shaker</h3>
-                <p>
-                    One of cycling's earliest designs, with a fascinatingly
-                    primitive construction that shows just how far bicycles
-                    have evolved.
-                </p>
-            </div>
-        </article>
-
-
-        <article class="bike-card">
-            <div class="bike-image"
-            style="background-image:url('https://images.unsplash.com/photo-1571068316344-75bc76f77890?auto=format&fit=crop&w=1000&q=85')">
-            </div>
-            <div class="bike-info">
-                <div class="bike-number">03</div>
-                <h3>Vintage Tandem</h3>
-                <p>
-                    A wonderfully social classic bicycle built for two.
-                    Perfect for sharing the experience with someone else.
-                </p>
-            </div>
-        </article>
-
-
-        <article class="bike-card">
-            <div class="bike-image"
-            style="background-image:url('https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&w=1000&q=85')">
-            </div>
-            <div class="bike-info">
-                <div class="bike-number">04</div>
-                <h3>Safety Bicycle</h3>
-                <p>
-                    The design that helped shape the modern bicycle,
-                    with two similarly sized wheels and a much more
-                    familiar riding position.
-                </p>
-            </div>
-        </article>
-
-
-        <article class="bike-card">
-            <div class="bike-image"
-            style="background-image:url('https://images.unsplash.com/photo-1541625602330-2277a4c46182?auto=format&fit=crop&w=1000&q=85')">
-            </div>
-            <div class="bike-info">
-                <div class="bike-number">05</div>
-                <h3>Indonesian Rickshaw</h3>
-                <p>
-                    A wonderfully unusual piece of transport history,
-                    bringing a completely different cycling culture
-                    into the collection.
-                </p>
-            </div>
-        </article>
-
-
-        <article class="bike-card">
-            <div class="bike-image"
-            style="background-image:url('https://images.unsplash.com/photo-1505705694340-019e1e335916?auto=format&fit=crop&w=1000&q=85')">
-            </div>
-            <div class="bike-info">
-                <div class="bike-number">06</div>
-                <h3>1960s Racing Bike</h3>
-                <p>
-                    Lightweight, elegant and unmistakably from the
-                    golden age of road racing.
-                </p>
-            </div>
-        </article>
-
-
-        <article class="bike-card">
-            <div class="bike-image"
-            style="background-image:url('https://images.unsplash.com/photo-1558981852-426c6c22a060?auto=format&fit=crop&w=1000&q=85')">
-            </div>
-            <div class="bike-info">
-                <div class="bike-number">07</div>
-                <h3>Raleigh Chopper</h3>
-                <p>
-                    One of the most recognisable British bicycles ever
-                    made. Instantly nostalgic and unmistakably 1970s.
-                </p>
-            </div>
-        </article>
-
-
-        <article class="bike-card">
-            <div class="bike-image"
-            style="background-image:url('https://images.unsplash.com/photo-1529422643029-d4585747aaf2?auto=format&fit=crop&w=1000&q=85')">
-            </div>
-            <div class="bike-info">
-                <div class="bike-number">08</div>
-                <h3>Raleigh Grifter</h3>
-                <p>
-                    A chunky British classic from the BMX-era boom,
-                    packed with character and nostalgia.
-                </p>
-            </div>
-        </article>
-
-
-        <article class="bike-card">
-            <div class="bike-image"
-            style="background-image:url('https://images.unsplash.com/photo-1575585269294-7d28dd912db8?auto=format&fit=crop&w=1000&q=85')">
-            </div>
-            <div class="bike-info">
-                <div class="bike-number">09</div>
-                <h3>Pashley Mailstar</h3>
-                <p>
-                    A genuine British workhorse originally designed
-                    for postal deliveries and a brilliant example
-                    of practical cycling heritage.
-                </p>
-            </div>
-        </article>
-
-    </div>
+    <p>
+        Nine bicycles. Several decades of cycling history.
+        And absolutely no shortage of things to talk about.
+    </p>
 
 </div>
 
+<div class="bike-grid">
+
+    <article class="bike-card">
+        <div class="bike-image"
+        style="background-image:url('https://images.unsplash.com/photo-1502744688674-c619d1586c9e?auto=format&fit=crop&w=1000&q=85')">
+        </div>
+        <div class="bike-info">
+            <div class="bike-number">01</div>
+            <h3>Penny Farthing</h3>
+            <p>
+                The unmistakable Victorian high-wheel bicycle.
+                A spectacular piece of cycling history and one of
+                the ultimate centrepieces of the collection.
+            </p>
+        </div>
+    </article>
+
+    <article class="bike-card">
+        <div class="bike-image"
+        style="background-image:url('https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=1000&q=85')">
+        </div>
+        <div class="bike-info">
+            <div class="bike-number">02</div>
+            <h3>Bone Shaker</h3>
+            <p>
+                One of cycling's earliest designs, with a fascinatingly
+                primitive construction that shows just how far bicycles
+                have evolved.
+            </p>
+        </div>
+    </article>
+
+    <article class="bike-card">
+        <div class="bike-image"
+        style="background-image:url('https://images.unsplash.com/photo-1571068316344-75bc76f77890?auto=format&fit=crop&w=1000&q=85')">
+        </div>
+        <div class="bike-info">
+            <div class="bike-number">03</div>
+            <h3>Vintage Tandem</h3>
+            <p>
+                A wonderfully social classic bicycle built for two.
+                Perfect for sharing the experience with someone else.
+            </p>
+        </div>
+    </article>
+
+    <article class="bike-card">
+        <div class="bike-image"
+        style="background-image:url('https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&w=1000&q=85')">
+        </div>
+        <div class="bike-info">
+            <div class="bike-number">04</div>
+            <h3>Safety Bicycle</h3>
+            <p>
+                The design that helped shape the modern bicycle,
+                with two similarly sized wheels and a much more
+                familiar riding position.
+            </p>
+        </div>
+    </article>
+
+    <article class="bike-card">
+        <div class="bike-image"
+        style="background-image:url('https://images.unsplash.com/photo-1541625602330-2277a4c46182?auto=format&fit=crop&w=1000&q=85')">
+        </div>
+        <div class="bike-info">
+            <div class="bike-number">05</div>
+            <h3>Indonesian Rickshaw</h3>
+            <p>
+                A wonderfully unusual piece of transport history,
+                bringing a completely different cycling culture
+                into the collection.
+            </p>
+        </div>
+    </article>
+
+    <article class="bike-card">
+        <div class="bike-image"
+        style="background-image:url('https://images.unsplash.com/photo-1505705694340-019e1e335916?auto=format&fit=crop&w=1000&q=85')">
+        </div>
+        <div class="bike-info">
+            <div class="bike-number">06</div>
+            <h3>1960s Racing Bike</h3>
+            <p>
+                Lightweight, elegant and unmistakably from the
+                golden age of road racing.
+            </p>
+        </div>
+    </article>
+
+    <article class="bike-card">
+        <div class="bike-image"
+        style="background-image:url('https://images.unsplash.com/photo-1558981852-426c6c22a060?auto=format&fit=crop&w=1000&q=85')">
+        </div>
+        <div class="bike-info">
+            <div class="bike-number">07</div>
+            <h3>Raleigh Chopper</h3>
+            <p>
+                One of the most recognisable British bicycles ever
+                made. Instantly nostalgic and unmistakably 1970s.
+            </p>
+        </div>
+    </article>
+
+    <article class="bike-card">
+        <div class="bike-image"
+        style="background-image:url('https://images.unsplash.com/photo-1529422643029-d4585747aaf2?auto=format&fit=crop&w=1000&q=85')">
+        </div>
+        <div class="bike-info">
+            <div class="bike-number">08</div>
+            <h3>Raleigh Grifter</h3>
+            <p>
+                A chunky British classic from the BMX-era boom,
+                packed with character and nostalgia.
+            </p>
+        </div>
+    </article>
+
+    <article class="bike-card">
+        <div class="bike-image"
+        style="background-image:url('https://images.unsplash.com/photo-1575585269294-7d28dd912db8?auto=format&fit=crop&w=1000&q=85')">
+        </div>
+        <div class="bike-info">
+            <div class="bike-number">09</div>
+            <h3>Pashley Mailstar</h3>
+            <p>
+                A genuine British workhorse originally designed
+                for postal deliveries and a brilliant example
+                of practical cycling heritage.
+            </p>
+        </div>
+    </article>
+
+</div>
+
+
+</div>
 
 </section>
 
 <section class="section experience" id="experience">
 
-
 <div class="section-inner">
 
-    <div class="section-heading">
 
-        <div class="eyebrow">
-            What We Do
-        </div>
+<div class="section-heading">
 
-        <h2>
-            More than just
-            a bike ride.
-        </h2>
-
-        <p>
-            Our collection can be brought to experiences, events and
-            locations where ordinary bicycles simply wouldn't do.
-        </p>
-
+    <div class="eyebrow">
+        What We Do
     </div>
 
+    <h2>
+        More than just
+        a bike ride.
+    </h2>
 
-    <div class="experience-grid">
+    <p>
+        Our collection can be brought to experiences, events and
+        locations where ordinary bicycles simply wouldn't do.
+    </p>
 
-        <div class="experience-card">
-            <span>01</span>
-            <h3>Experience Days</h3>
-            <p>
-                Step into cycling history and try something completely
-                different from the usual experience day.
-            </p>
-        </div>
+</div>
 
-        <div class="experience-card">
-            <span>02</span>
-            <h3>Private Events</h3>
-            <p>
-                Birthdays, celebrations and unforgettable group occasions
-                with a collection of bicycles guaranteed to get people talking.
-            </p>
-        </div>
+<div class="experience-grid">
 
-        <div class="experience-card">
-            <span>03</span>
-            <h3>Weddings</h3>
-            <p>
-                Add a genuinely unusual touch to your special day with
-                vintage bicycles full of character.
-            </p>
-        </div>
+    <div class="experience-card">
+        <span>01</span>
+        <h3>Experience Days</h3>
+        <p>
+            Step into cycling history and try something completely
+            different from the usual experience day.
+        </p>
+    </div>
 
-        <div class="experience-card">
-            <span>04</span>
-            <h3>Corporate Events</h3>
-            <p>
-                Give your team something memorable to do together,
-                with bikes that make an ordinary away day rather less ordinary.
-            </p>
-        </div>
+    <div class="experience-card">
+        <span>02</span>
+        <h3>Private Events</h3>
+        <p>
+            Birthdays, celebrations and unforgettable group occasions
+            with a collection of bicycles guaranteed to get people talking.
+        </p>
+    </div>
 
-        <div class="experience-card">
-            <span>05</span>
-            <h3>Film & Photography</h3>
-            <p>
-                Period bicycles and unusual machines available for
-                productions, shoots and creative projects.
-            </p>
-        </div>
+    <div class="experience-card">
+        <span>03</span>
+        <h3>Weddings</h3>
+        <p>
+            Add a genuinely unusual touch to your special day with
+            vintage bicycles full of character.
+        </p>
+    </div>
 
-        <div class="experience-card">
-            <span>06</span>
-            <h3>Group Experiences</h3>
-            <p>
-                Bring your friends, family or group and discover
-                a collection unlike any other.
-            </p>
-        </div>
+    <div class="experience-card">
+        <span>04</span>
+        <h3>Corporate Events</h3>
+        <p>
+            Give your team something memorable to do together,
+            with bikes that make an ordinary away day rather less ordinary.
+        </p>
+    </div>
 
+    <div class="experience-card">
+        <span>05</span>
+        <h3>Film & Photography</h3>
+        <p>
+            Period bicycles and unusual machines available for
+            productions, shoots and creative projects.
+        </p>
+    </div>
+
+    <div class="experience-card">
+        <span>06</span>
+        <h3>Group Experiences</h3>
+        <p>
+            Bring your friends, family or group and discover
+            a collection unlike any other.
+        </p>
     </div>
 
 </div>
 
+
+</div>
 
 </section>
 
 <section class="section poole" id="poole">
 
-
 <div class="section-inner">
 
-    <div class="poole-content">
 
-        <div class="eyebrow">
-            Our First Experience
-        </div>
+<div class="poole-content">
 
-        <h2>
-            Poole Harbour.
-        </h2>
-
-        <p>
-            Our first experience takes place around the beautiful
-            Poole Harbour area in Dorset, bringing cycling history
-            into one of the South Coast's most memorable settings.
-        </p>
-
-        <p>
-            Come and ride a piece of history, discover some remarkable
-            bicycles and enjoy an experience that's just a little
-            different.
-        </p>
-
+    <div class="eyebrow">
+        Our First Experience
     </div>
+
+    <h2>
+        Poole Harbour.
+    </h2>
+
+    <p>
+        Our first experience takes place around the beautiful
+        Poole Harbour area in Dorset, bringing cycling history
+        into one of the South Coast's most memorable settings.
+    </p>
+
+    <p>
+        Come and ride a piece of history, discover some remarkable
+        bicycles and enjoy an experience that's just a little
+        different.
+    </p>
 
 </div>
 
+
+</div>
 
 </section>
 
 <section class="section booking" id="booking">
 
-
 <div class="booking-wrapper">
 
-    <div class="booking-intro">
 
-        <div class="eyebrow">
-            Reservations
-        </div>
+<div class="booking-intro">
 
-        <h2>Book Your Experience</h2>
-
-        <p>
-            Choose your date and experience below.
-        </p>
-
+    <div class="eyebrow">
+        Reservations
     </div>
 
-    <div id="booking-widget"></div>
+    <h2>Book Your Experience</h2>
+
+    <p>
+        Choose your date and experience below.
+    </p>
 
 </div>
 
+<div id="booking-widget"></div>
+
+
+</div>
 
 </section>
 
 <section class="section contact" id="contact">
 
-
 <div class="section-inner contact-grid">
 
-    <div class="contact-copy">
 
-        <div class="eyebrow">
-            Get In Touch
-        </div>
+<div class="contact-copy">
 
-        <h2>
-            Let's talk
-            bicycles.
-        </h2>
-
-        <p>
-            Have a question, planning an event or simply want to know
-            more about the collection? Send us a message and we'll
-            get back to you.
-        </p>
-
+    <div class="eyebrow">
+        Get In Touch
     </div>
 
+    <h2>
+        Let's talk
+        bicycles.
+    </h2>
 
-    <form
-        class="contact-form"
-        action="https://www.formbackend.com/f/0c2c269cb29265ed"
-        method="POST"
-    >
-
-        <label for="category">
-            What can we help you with?
-        </label>
-
-        <select id="category" name="category" required>
-            <option value="" disabled selected>
-                Select a category
-            </option>
-            <option value="General Enquiry">
-                General Enquiry
-            </option>
-            <option value="Booking Enquiry">
-                Booking Enquiry
-            </option>
-            <option value="Private Event">
-                Private Event
-            </option>
-            <option value="Wedding">
-                Wedding
-            </option>
-            <option value="Corporate Event">
-                Corporate Event
-            </option>
-            <option value="Film & Photography">
-                Film & Photography
-            </option>
-            <option value="Something Else">
-                Something Else
-            </option>
-        </select>
-
-
-        <label for="name">
-            Name
-        </label>
-
-        <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Your name"
-            required
-        >
-
-
-        <label for="email">
-            Email
-        </label>
-
-        <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="you@example.com"
-            required
-        >
-
-
-        <label for="message">
-            Message
-        </label>
-
-        <textarea
-            id="message"
-            name="message"
-            placeholder="How can we help?"
-            required
-        ></textarea>
-
-
-        <button type="submit">
-            Send Enquiry
-        </button>
-
-    </form>
+    <p>
+        Have a question, planning an event or simply want to know
+        more about the collection? Send us a message and we'll
+        get back to you.
+    </p>
 
 </div>
 
+<form
+    class="contact-form"
+    id="contactForm"
+    action="https://www.formbackend.com/f/0c2c269cb29265ed"
+    method="POST"
+>
+
+    <label for="category">
+        What can we help you with?
+    </label>
+
+    <select id="category" name="category" required>
+        <option value="" disabled selected>
+            Select a category
+        </option>
+        <option value="General Enquiry">
+            General Enquiry
+        </option>
+        <option value="Booking Enquiry">
+            Booking Enquiry
+        </option>
+        <option value="Private Event">
+            Private Event
+        </option>
+        <option value="Wedding">
+            Wedding
+        </option>
+        <option value="Corporate Event">
+            Corporate Event
+        </option>
+        <option value="Film & Photography">
+            Film & Photography
+        </option>
+        <option value="Something Else">
+            Something Else
+        </option>
+    </select>
+
+    <label for="name">
+        Name
+    </label>
+
+    <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Your name"
+        required
+    >
+
+    <label for="email">
+        Email
+    </label>
+
+    <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="you@example.com"
+        required
+    >
+
+    <label for="message">
+        Message
+    </label>
+
+    <textarea
+        id="message"
+        name="message"
+        placeholder="How can we help?"
+        required
+    ></textarea>
+
+    <button type="submit" id="contactSubmit">
+        Send Enquiry
+    </button>
+
+    <div
+        id="contactError"
+        class="contact-error"
+        role="alert"
+        hidden
+    ></div>
+
+</form>
+
+
+</div>
 
 </section>
 
@@ -1179,25 +1223,25 @@ footer p {
 
 <footer>
 
-
 <div class="footer-inner">
 
-    <div>
-        <div class="footer-brand">
-            Jacob's Vintage Bicycles
-        </div>
 
-        <p>
-            Ride a little piece of cycling history.
-        </p>
+<div>
+    <div class="footer-brand">
+        Jacob's Vintage Bicycles
     </div>
 
     <p>
-        © 2026 Jacob's Vintage Bicycles. All rights reserved.
+        Ride a little piece of cycling history.
     </p>
-
 </div>
 
+<p>
+    © 2026 Jacob's Vintage Bicycles. All rights reserved.
+</p>
+
+
+</div>
 
 </footer>
 
@@ -1227,6 +1271,67 @@ document.querySelectorAll(".nav a").forEach(link => {
     link.addEventListener("click", () => {
         nav.classList.remove("mobile-open");
     });
+
+});
+
+
+/* CONTACT FORM */
+
+const contactForm = document.getElementById("contactForm");
+const contactSubmit = document.getElementById("contactSubmit");
+const contactError = document.getElementById("contactError");
+
+contactForm.addEventListener("submit", async (event) => {
+
+    event.preventDefault();
+
+    contactError.hidden = true;
+    contactError.textContent = "";
+
+    contactSubmit.disabled = true;
+    contactSubmit.textContent = "Sending...";
+
+    try {
+
+        const response = await fetch(contactForm.action, {
+            method: "POST",
+            body: new FormData(contactForm),
+            headers: {
+                "Accept": "application/json"
+            }
+        });
+
+        if (!response.ok) {
+            throw new Error("Submission failed");
+        }
+
+        contactForm.outerHTML = `
+            <div class="contact-success" role="status">
+                <div class="success-icon">✓</div>
+
+                <h3>Enquiry sent.</h3>
+
+                <p>
+                    Thank you for getting in touch with Jacob's Vintage
+                    Bicycles. We've received your message and will get
+                    back to you as soon as we can.
+                </p>
+            </div>
+        `;
+
+    } catch (error) {
+
+        console.error(error);
+
+        contactError.textContent =
+            "Something went wrong while sending your enquiry. Please try again.";
+
+        contactError.hidden = false;
+
+        contactSubmit.disabled = false;
+        contactSubmit.textContent = "Send Enquiry";
+
+    }
 
 });
 
