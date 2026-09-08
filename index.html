@@ -5,8 +5,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Jacob's Vintage Bicycles favicon -->
-
 <link rel="icon" type="image/png" href="https://i.postimg.cc/rwYb6343/transparent-logo.png">
 <link rel="apple-touch-icon" href="https://i.postimg.cc/rwYb6343/transparent-logo.png">
 
@@ -565,35 +563,6 @@ footer p {
     font-size: 12px;
 }
 
-/* FLOATING BOOK BUTTON */
-
-.floating-book {
-    position: fixed;
-    right: 25px;
-    bottom: 25px;
-    z-index: 900;
-    background: var(--gold);
-    color: white;
-    text-decoration: none;
-    padding: 15px 22px;
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: .1em;
-    text-transform: uppercase;
-    border-radius: 4px;
-    box-shadow: 0 10px 30px rgba(0,0,0,.22);
-    opacity: 0;
-    pointer-events: none;
-    transform: translateY(20px);
-    transition: .35s ease;
-}
-
-.floating-book.visible {
-    opacity: 1;
-    pointer-events: auto;
-    transform: translateY(0);
-}
-
 /* RESPONSIVE */
 
 @media(max-width: 900px) {
@@ -668,11 +637,6 @@ footer p {
         flex-direction: column;
         align-items: flex-start;
     }
-
-    .floating-book {
-        right: 15px;
-        bottom: 15px;
-    }
 }
 </style>
 
@@ -682,7 +646,7 @@ footer p {
 
 <header class="site-header" id="header">
 
-```
+
 <a href="#home" aria-label="Jacob's Vintage Bicycles home">
     <img
         src="https://i.postimg.cc/rwYb6343/transparent-logo.png"
@@ -701,7 +665,7 @@ footer p {
 </nav>
 
 <div class="mobile-menu">☰</div>
-```
+
 
 </header>
 
@@ -709,7 +673,7 @@ footer p {
 
 <section class="hero" id="home">
 
-```
+
 <div class="hero-content">
 
     <div class="eyebrow">
@@ -736,13 +700,13 @@ footer p {
     </div>
 
 </div>
-```
+
 
 </section>
 
 <section class="section intro" id="about">
 
-```
+
 <div class="section-inner intro-grid">
 
     <div class="intro-image"></div>
@@ -776,13 +740,13 @@ footer p {
     </div>
 
 </div>
-```
+
 
 </section>
 
 <section class="section collection" id="collection">
 
-```
+
 <div class="section-inner">
 
     <div class="section-heading">
@@ -807,11 +771,9 @@ footer p {
     <div class="bike-grid">
 
         <article class="bike-card">
-
             <div class="bike-image"
             style="background-image:url('https://images.unsplash.com/photo-1502744688674-c619d1586c9e?auto=format&fit=crop&w=1000&q=85')">
             </div>
-
             <div class="bike-info">
                 <div class="bike-number">01</div>
                 <h3>Penny Farthing</h3>
@@ -821,16 +783,13 @@ footer p {
                     the ultimate centrepieces of the collection.
                 </p>
             </div>
-
         </article>
 
 
         <article class="bike-card">
-
             <div class="bike-image"
             style="background-image:url('https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=1000&q=85')">
             </div>
-
             <div class="bike-info">
                 <div class="bike-number">02</div>
                 <h3>Bone Shaker</h3>
@@ -840,16 +799,13 @@ footer p {
                     have evolved.
                 </p>
             </div>
-
         </article>
 
 
         <article class="bike-card">
-
             <div class="bike-image"
             style="background-image:url('https://images.unsplash.com/photo-1571068316344-75bc76f77890?auto=format&fit=crop&w=1000&q=85')">
             </div>
-
             <div class="bike-info">
                 <div class="bike-number">03</div>
                 <h3>Vintage Tandem</h3>
@@ -858,16 +814,13 @@ footer p {
                     Perfect for sharing the experience with someone else.
                 </p>
             </div>
-
         </article>
 
 
         <article class="bike-card">
-
             <div class="bike-image"
             style="background-image:url('https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&w=1000&q=85')">
             </div>
-
             <div class="bike-info">
                 <div class="bike-number">04</div>
                 <h3>Safety Bicycle</h3>
@@ -877,16 +830,13 @@ footer p {
                     familiar riding position.
                 </p>
             </div>
-
         </article>
 
 
         <article class="bike-card">
-
             <div class="bike-image"
             style="background-image:url('https://images.unsplash.com/photo-1541625602330-2277a4c46182?auto=format&fit=crop&w=1000&q=85')">
             </div>
-
             <div class="bike-info">
                 <div class="bike-number">05</div>
                 <h3>Indonesian Rickshaw</h3>
@@ -896,16 +846,13 @@ footer p {
                     into the collection.
                 </p>
             </div>
-
         </article>
 
 
         <article class="bike-card">
-
             <div class="bike-image"
             style="background-image:url('https://images.unsplash.com/photo-1505705694340-019e1e335916?auto=format&fit=crop&w=1000&q=85')">
             </div>
-
             <div class="bike-info">
                 <div class="bike-number">06</div>
                 <h3>1960s Racing Bike</h3>
@@ -914,16 +861,13 @@ footer p {
                     golden age of road racing.
                 </p>
             </div>
-
         </article>
 
 
         <article class="bike-card">
-
             <div class="bike-image"
             style="background-image:url('https://images.unsplash.com/photo-1558981852-426c6c22a060?auto=format&fit=crop&w=1000&q=85')">
             </div>
-
             <div class="bike-info">
                 <div class="bike-number">07</div>
                 <h3>Raleigh Chopper</h3>
@@ -932,16 +876,13 @@ footer p {
                     made. Instantly nostalgic and unmistakably 1970s.
                 </p>
             </div>
-
         </article>
 
 
         <article class="bike-card">
-
             <div class="bike-image"
             style="background-image:url('https://images.unsplash.com/photo-1529422643029-d4585747aaf2?auto=format&fit=crop&w=1000&q=85')">
             </div>
-
             <div class="bike-info">
                 <div class="bike-number">08</div>
                 <h3>Raleigh Grifter</h3>
@@ -950,16 +891,13 @@ footer p {
                     packed with character and nostalgia.
                 </p>
             </div>
-
         </article>
 
 
         <article class="bike-card">
-
             <div class="bike-image"
             style="background-image:url('https://images.unsplash.com/photo-1575585269294-7d28dd912db8?auto=format&fit=crop&w=1000&q=85')">
             </div>
-
             <div class="bike-info">
                 <div class="bike-number">09</div>
                 <h3>Pashley Mailstar</h3>
@@ -969,19 +907,18 @@ footer p {
                     of practical cycling heritage.
                 </p>
             </div>
-
         </article>
 
     </div>
 
 </div>
-```
+
 
 </section>
 
 <section class="section experience" id="experience">
 
-```
+
 <div class="section-inner">
 
     <div class="section-heading">
@@ -1062,13 +999,13 @@ footer p {
     </div>
 
 </div>
-```
+
 
 </section>
 
 <section class="section poole" id="poole">
 
-```
+
 <div class="section-inner">
 
     <div class="poole-content">
@@ -1096,13 +1033,13 @@ footer p {
     </div>
 
 </div>
-```
+
 
 </section>
 
 <section class="section booking" id="booking">
 
-```
+
 <div class="booking-wrapper">
 
     <div class="booking-intro">
@@ -1122,13 +1059,13 @@ footer p {
     <div id="booking-widget"></div>
 
 </div>
-```
+
 
 </section>
 
 <section class="section contact" id="contact">
 
-```
+
 <div class="section-inner contact-grid">
 
     <div class="contact-copy">
@@ -1234,7 +1171,7 @@ footer p {
     </form>
 
 </div>
-```
+
 
 </section>
 
@@ -1242,7 +1179,7 @@ footer p {
 
 <footer>
 
-```
+
 <div class="footer-inner">
 
     <div>
@@ -1260,18 +1197,13 @@ footer p {
     </p>
 
 </div>
-```
+
 
 </footer>
-
-<a href="#booking" class="floating-book" id="floatingBook">
-    Book Now
-</a>
 
 <script>
 
 const header = document.getElementById("header");
-const floatingBook = document.getElementById("floatingBook");
 
 window.addEventListener("scroll", () => {
 
@@ -1279,12 +1211,6 @@ window.addEventListener("scroll", () => {
         header.classList.add("scrolled");
     } else {
         header.classList.remove("scrolled");
-    }
-
-    if (window.scrollY > window.innerHeight * 0.72) {
-        floatingBook.classList.add("visible");
-    } else {
-        floatingBook.classList.remove("visible");
     }
 
 });
