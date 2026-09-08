@@ -4,6 +4,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Jacob's Vintage Bicycles favicon -->
+
+<link rel="icon" type="image/png" href="https://i.postimg.cc/rwYb6343/transparent-logo.png">
+<link rel="apple-touch-icon" href="https://i.postimg.cc/rwYb6343/transparent-logo.png">
+
 <title>Jacob's Vintage Bicycles | Ride Cycling History</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -701,8 +707,6 @@ footer p {
 
 <main>
 
-<!-- HERO -->
-
 <section class="hero" id="home">
 
 ```
@@ -735,8 +739,6 @@ footer p {
 ```
 
 </section>
-
-<!-- INTRO -->
 
 <section class="section intro" id="about">
 
@@ -777,8 +779,6 @@ footer p {
 ```
 
 </section>
-
-<!-- COLLECTION -->
 
 <section class="section collection" id="collection">
 
@@ -979,8 +979,6 @@ footer p {
 
 </section>
 
-<!-- EXPERIENCES -->
-
 <section class="section experience" id="experience">
 
 ```
@@ -1068,8 +1066,6 @@ footer p {
 
 </section>
 
-<!-- POOLE -->
-
 <section class="section poole" id="poole">
 
 ```
@@ -1104,8 +1100,6 @@ footer p {
 
 </section>
 
-<!-- BOOKING -->
-
 <section class="section booking" id="booking">
 
 ```
@@ -1131,8 +1125,6 @@ footer p {
 ```
 
 </section>
-
-<!-- CONTACT -->
 
 <section class="section contact" id="contact">
 
@@ -1278,8 +1270,6 @@ footer p {
 
 <script>
 
-/* HEADER */
-
 const header = document.getElementById("header");
 const floatingBook = document.getElementById("floatingBook");
 
@@ -1291,11 +1281,6 @@ window.addEventListener("scroll", () => {
         header.classList.remove("scrolled");
     }
 
-    /*
-       The floating Book Now button only appears
-       after the main hero booking button has been passed.
-    */
-
     if (window.scrollY > window.innerHeight * 0.72) {
         floatingBook.classList.add("visible");
     } else {
@@ -1304,20 +1289,12 @@ window.addEventListener("scroll", () => {
 
 });
 
-
-/* MOBILE MENU */
-
 const mobileMenu = document.querySelector(".mobile-menu");
 const nav = document.querySelector(".nav");
 
 mobileMenu.addEventListener("click", () => {
-
     nav.classList.toggle("mobile-open");
-
 });
-
-
-/* CLOSE MOBILE MENU AFTER CLICK */
 
 document.querySelectorAll(".nav a").forEach(link => {
 
@@ -1328,8 +1305,6 @@ document.querySelectorAll(".nav a").forEach(link => {
 });
 
 </script>
-
-<!-- GETITBOOKED -->
 
 <script
     src="https://getitbooked.app/widget.js"
